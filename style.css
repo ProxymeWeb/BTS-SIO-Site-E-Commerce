@@ -3,14 +3,7 @@
      margin :  0px 0px 0px 0px ;
      color: rgb(57,57,57)
 }
-nav ul{list-style: none ;
-       text-decoration:none; 
-       background-color:rgb(244,244,244) ;  
-        
-        display: flex ;
-        flex-direction: row
-      
-}
+
 a{text-decoration:none; 
   color: rgb(57,57,57) ;
 }
@@ -22,6 +15,43 @@ nav{
     flex-direction: row ;
     color: rgb(57,57,57)
 }
-nav ul li{padding: 0px 50px 0px 0px ;
+
+nav ul{list-style: none ;
+       text-decoration:none; 
+       background-color:rgb(244,244,244) ;  
+        
+        display: flex ;
+        flex-direction: row
+      
+}
+nav ul li{padding: 0px 20px 0px 20px ;
          margin :  0px 0px 0px 0px ;
-         }
+         
+         
+        }
+nav ul li :hover{
+         padding-top : 20px;
+         padding-bottom : 20px;
+         background-color: grey;
+         border-radius:20% ;
+         transition: background 0.75s;
+        }
+#menuright {position :absolute;
+          right: 10px;
+          
+}
+
+footer{    position : absolute;
+           bottom: 0px ;
+           list-style: none ;
+           text-decoration:none; 
+}
+
+#cover{  background: url(images/bckground1.jpg) no-repeat center center fixed;       
+     background-size: cover;
+      height: 800px;
+     margin-top : 0 ;
+     padding-top: 0 ;
+     overflow: hidden;
+     
+}
