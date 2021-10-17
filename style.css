@@ -1,94 +1,234 @@
-﻿body{background-color:rgb(244,244,244);
-      padding: 0px 0px 0px 0px ;
-     margin: 0px 0px 0px 0px;   
-     color: rgb(57,57,57) ;
+@font-face{
+  font-family: "Rosalinda" ;
+  src: url("fonts/Rosalinda.ttf") format("opentype"),
+       url("fonts/RosalindaRegular.ttf") format("truetype");}
+
+
+
+
+
+
+
+body{background-color:rgb(228,228,216);
+      padding: 0px 0px 0px 0px;
+     margin: 0px 0px 0px 0px;
+     color: rgb(10,65,62) ;
      font-family:Helvetica Neue, Helvetica, sans-serif;
-    
-}
 
-a{text-decoration:none; 
-  color: rgb(57,57,57) ;
 }
 
 
-
-
-#menuright {position :absolute;
-          right: 10px;      
+header{background-color: rgb(255,255,255);  /* background color du menu */
+      color: rgb(10,65,62) ;
+      padding-top: 10px ;
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      padding-left: 20% ;
+      padding-right: 20% ;
+      box-shadow: 0px 5px 5px #B3B3A6;
 }
+.menu{
+    background-color: rgb(255,255,255);  /* background color du menu */
+    color: rgb(10,65,62);  /*  color du text */
 
-footer{    position : absolute;
-           bottom: 0px ;
-           list-style: none ;
-           text-decoration:none; 
-}
 
-#cover{  background: url(images/bckground1.jpg) no-repeat center center  ;       
+  }
+
+  .logo{height:50px;
+      width: 150px ;
+      display: block;
+      margin-left: auto;
+      margin-right: auto }
+
+
+  footer {
+  	height: 60px;
+  	width: 100%;
+  	background: rgb(10,65,62);
+    position: relative;
+    bottom: 0;
+    color: rgb(255,255,255);
+    text-align: center ;
+    margin: 0 ;
+    padding-top: 0;
+  }
+  footer .top_line {
+  	height: 5px;
+  	width: 100%;
+  	top: 0;
+  	background-color: rgb(255,255,255)	;
+
+  }
+
+
+ #cover{  background: url(images/bckground1.jpg) no-repeat center center  ;
      background-size: cover;
-      min-height:  720px;
-      height: auto;    
+      min-height:  700px;
+      height: auto;
      overflow: hidden;
-     
+     position : relative  ;
+     padding-bottom:0px;
+     margin-bottom:0px;
+}
+
+#login{position: absolute;
+       top: 5px;
+       right: 15px;
+       z-index:9999;
+       padding: 7px 20px;
+     color: #85919d;
+    border: 2px solid rgba(10,65,62, 0.5);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+  transition-duration: 0.5s}
+
+    #login:hover{position: absolute;
+           top: 5px;
+           right: 15px;
+           z-index:9999;
+           padding: 7px 20px;
+         color:rgba(10, 65, 62, 1);
+        border: 2px solid rgba(10, 65, 62, 1);
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        border-radius: 7px;}
+
+
+.bande{ background-color:rgb(255,255,255);
+     padding-top:5px;
+     padding-left:0px;
+     padding-right: 0px;
+     margin-right:20%;
+     margin-left: 20%;
+
+       }
+
+h1,p{ text-align: center;
+}
+
+h1{font-family: "Rosalinda";
+   font-size: 50px}
+.container{display:flex;
+           flex-wrap: wrap;
+           justify-content: space-between;
+           margin-left:0px;
+           margin-right:0px;
+           padding-left:0px;
+           padding-right:0px;
+
+           }
+
+.item{ height: 250px ;
+       width:375px;
+        margin-left:0px;
+        margin-right:0px;
+        margin-bottom:8px;
+
+
+     }
+
+.banner{width:100%;
+        height:auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left:0px;
+        margin-right:0px;
+        padding-left:0px;
+        padding-right:0px;}
+
+
+/*
+=====
+MENU
+=====
+*/
+
+.r-link{
+  display: var(--rLinkDisplay, inline-flex) !important;
+}
+
+.r-link[href]{
+  color: var(--rLinkColor) !important;
+  text-decoration: var(--rLinkTextDecoration, none) !important;
+}
+
+.r-list{
+  padding-left: !important;
+  margin-top: var(--rListMarginTop, 0) !important;
+  margin-bottom: var(--rListMarginBottom, 0) !important;
+  list-style: var(--rListListStyle, none) !important;
 }
 
 
 
 
 
-.centrage-menu{display:flex;
-               
-               justify-content: center ;
-               width: 100% ;
-               
 
+.menu:hover .menu__link:not(:hover){
+  --rLinkColor: var(--menuLinkColorUnactive, rgba(22, 22, 22, .35));  /* Couleur des balises qui sont pas hover */
+}
 
+/*
+=====
+PRESENTATION STYLES
+=====
+*/
+
+.menu__list{
+  display: flex;
+  justify-content: space-between ;
 
 }
 
-.skew-menu{
-  text-align:center;
-  margin-top:9em;
-  position : absolute ;
-  
+.menu__link{
+  padding: var(--menuLinkPadding, 0.5rem 2.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.skew-menu ul{
-  display:inline-block;
-  margin:0;
-  padding:0;
-  list-style:none;
-  transform:skew(0deg);
-}
+/*
+=====
+TEXT UNDERLINED
+=====
+*/
 
-    .skew-menu ul li {
-        background: #fff;
-        float: left;
-        border-right: 1px solid #eee;
-        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-        text-transform: uppercase;
-        color: #555;
-        font-weight: bolder;
-        transition: all 0.3s linear;
-    }
-  
- .skew-menu ul li :first-child{
-    border-radius:7px 0 0 7px;
+
+.text-underlined{
+    position: relative;
+    overflow: hidden;
+    will-change: color;
+    transition: color .25s ease-out;
   }
-  
-  .skew-menu ul li :last-child{
-    border-right:none;
-    border-radius:0 7px 7px 0;
+
+  .text-underlined::before,
+  .text-underlined::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: var(--textUnderlinedLineColor, currentColor);
+
+    will-change: width;
+    transition: width .1s ease-out;
+    position: absolute;
+    bottom: 0;
   }
-  
-  .skew-menu ul li :hover{
-    background:#eee;
-    color:rgb(51,49,51);
+
+  .text-underlined::before{
+    left: 50%;
+    transform: translateX(-50%);
   }
-  
-  a{
-    display:block;
-    padding:1em 2em;
-    color:inherit;
-    text-decoration:none;
-    transform:skew(@skew);
+
+  .text-underlined::after{
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .text-underlined:hover::before,
+  .text-underlined:hover::after{
+    width: 100%;
+    transition-duration: .2s;
   }
