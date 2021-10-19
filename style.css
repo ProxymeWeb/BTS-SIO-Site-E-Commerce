@@ -1,8 +1,8 @@
-@font-face{
-  font-family: "Rosalinda" ;
-  src: url("fonts/Rosalinda.ttf") format("opentype"),
-       url("fonts/RosalindaRegular.ttf") format("truetype");}
+@font-face{font-family: "Vogue" ;
+            src: url("fonts/Vogue.ttf") format("truetype");}
 
+@font-face{font-family: "Helvetica" ;
+            src: url("fonts/Helvetica.ttf") format("truetype");}
 
 
 
@@ -10,7 +10,7 @@
 
 
 body{background-color:rgb(228,228,216);
-      padding: 0px 0px 0px 0px;
+     padding: 0px 0px 0px 0px;
      margin: 0px 0px 0px 0px;
      color: rgb(10,65,62) ;
      font-family:Helvetica Neue, Helvetica, sans-serif;
@@ -36,82 +36,89 @@ header{background-color: rgb(255,255,255);  /* background color du menu */
   }
 
   .logo{height:50px;
-      width: 150px ;
-      display: block;
-      margin-left: auto;
-      margin-right: auto }
+        width: 150px ;
+        display: block;
+        margin-left: auto;
+        margin-right: auto }
 
-
-  footer {
-  	height: 60px;
-  	width: 100%;
-  	background: rgb(10,65,62);
-    position: relative;
-    bottom: 0;
-    color: rgb(255,255,255);
-    text-align: center ;
-    margin: 0 ;
-    padding-top: 0;
-  }
-  footer .top_line {
-  	height: 5px;
-  	width: 100%;
-  	top: 0;
-  	background-color: rgb(255,255,255)	;
-
-  }
-
-
- #cover{  background: url(images/bckground1.jpg) no-repeat center center  ;
-     background-size: cover;
-      min-height:  700px;
-      height: auto;
-     overflow: hidden;
-     position : relative  ;
-     padding-bottom:0px;
-     margin-bottom:0px;
-}
 
 #login{position: absolute;
        top: 5px;
        right: 15px;
        z-index:9999;
        padding: 7px 20px;
-     color: #85919d;
-    border: 2px solid rgba(10,65,62, 0.5);
-    -webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
-    -ms-border-radius: 7px;
-    border-radius: 7px;
-  transition-duration: 0.5s}
+       color: #85919d;
+       border: 2px solid rgba(10,65,62, 0.5);
+       -webkit-border-radius: 7px;
+       -moz-border-radius: 7px;
+       -ms-border-radius: 7px;
+       border-radius: 7px;
+       transition-duration: 0.5s}
 
-    #login:hover{position: absolute;
-           top: 5px;
-           right: 15px;
-           z-index:9999;
-           padding: 7px 20px;
-         color:rgba(10, 65, 62, 1);
-        border: 2px solid rgba(10, 65, 62, 1);
-        -webkit-border-radius: 7px;
-        -moz-border-radius: 7px;
-        -ms-border-radius: 7px;
-        border-radius: 7px;}
+#login:hover{position: absolute;
+             top: 5px;
+             right: 15px;
+             z-index:9999;
+             padding: 7px 20px;
+             color:rgba(10, 65, 62, 1);
+             border: 2px solid rgba(10, 65, 62, 1);
+             -webkit-border-radius: 7px;
+             -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            border-radius: 7px;}
 
 
 .bande{ background-color:rgb(255,255,255);
      padding-top:5px;
      padding-left:0px;
      padding-right: 0px;
+     padding-bottom:150px;
      margin-right:20%;
      margin-left: 20%;
+     margin-bottom:auto;
 
        }
 
 h1,p{ text-align: center;
+      font-family: helvetica;
+
 }
 
-h1{font-family: "Rosalinda";
+h1{font-family: "Vogue";
    font-size: 50px}
+
+/*
+=====
+LES BOITES
+=====
+*/
+.banner{   width:100%;
+           height:auto;
+           margin-top: 100px;
+           margin-bottom: 100px;
+           margin-left:0px;
+           margin-right:0px;
+           padding-left:0px;
+           padding-right:0px;
+           }
+
+ #cover{       background: url(images/bckground1.jpg) no-repeat center center  ;
+               background-size: cover;
+               min-height:  800px;
+               width:  100%;
+               height: auto;
+               overflow: hidden;
+               position : relative  ;
+               padding-top: 80px;
+               padding-bottom:0px;
+               margin-bottom:0px;
+          }
+/*
+=====
+LES BOITES
+=====
+*/
+
 .container{display:flex;
            flex-wrap: wrap;
            justify-content: space-between;
@@ -123,23 +130,95 @@ h1{font-family: "Rosalinda";
            }
 
 .item{ height: 250px ;
-       width:375px;
-        margin-left:0px;
-        margin-right:0px;
-        margin-bottom:8px;
+       width:33%;
+       margin-left:0px;
+       margin-right:0px;
+       margin-bottom:8px;
 
 
      }
+/*
+=====
+CONTACT
+=====
+*/
+.boitecontact{
+              margin-right:15%;
+              margin-left:15%;
+              margin-top: 150px;
 
-.banner{width:100%;
-        height:auto;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left:0px;
-        margin-right:0px;
-        padding-left:0px;
-        padding-right:0px;}
+              }
+.imgcontact{ position: absolute;
+            top: 25%;
+            width:600px ;
+            height:500px;
+}
+.carrév{background-color:rgb(10,65,62);
+        color: white;
+         position: absolute;
+         width:280px ;
+         height:280px;
+         left:40% ;
+         top: 30%;
+         padding:20px 20px 20px 20px}
+.carrév h2{ text-align: center ;
+            font-family: Vogue;
+            padding-top:30px}
+.carrév p{ text-align: center ;
+           padding: 0px 0px 0px 0px ;}
 
+/*
+=====
+FORMULAIRE
+=====
+*/
+fieldset{margin-right: 15%;
+         margin-left: 15%;
+         margin-top: 50px;
+         margin-bottom: 50px;
+         background-color: #eeeeee;
+
+}
+fieldset label{
+               padding-bottom:10px
+
+}
+fieldset input{position : relative;
+              margin-bottom:10px
+
+
+}
+
+legend{ background-color: rgb(10,65,62);
+      color: white;
+      padding: 5px 10px;}
+
+.sexe{display: flex;
+      }
+
+/*
+=====
+FOOTER
+=====
+*/
+
+footer {
+  height: 60px;
+  width: 100%;
+  background: rgb(10,65,62);
+  position:relative;
+  bottom: 0px;
+  color: rgb(255,255,255);
+  text-align: center ;
+
+}
+footer .top_line {
+  height: 5px;
+  width: 100%;
+  top: 0;
+  background-color: rgb(255,255,255)	;
+
+}
 
 /*
 =====
