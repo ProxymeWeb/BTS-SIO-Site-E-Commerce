@@ -35,8 +35,8 @@ header{background-color: rgb(255,255,255);  /* background color du menu */
 
   }
 
-  .logo{height:50px;
-        width: 150px ;
+  .logo{height:auto;
+        width: 200px ;
         display: block;
         margin-left: auto;
         margin-right: auto }
@@ -79,12 +79,14 @@ header{background-color: rgb(255,255,255);  /* background color du menu */
 
        }
 
-h1,p{ text-align: center;
+p{ padding-bottom:40px;
       font-family: helvetica;
+      text-align: center;
 
 }
 
 h1{font-family: "Vogue";
+   text-align: center;
    font-size: 50px}
 
 /*
@@ -319,9 +321,23 @@ PRESENTATION STYLES MENU
   font-weight: 700;
   text-transform: uppercase;
 }
-
-
-
+/*
+=====
+QUI SOMME NOUS
+=====
+*/
+#quisommesnous {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background-color: #eeeeee;
+    text-align: left;
+}
+#qsn {
+    margin-left: 10%;
+    width:80%;
+}
 
 /*
 =====
