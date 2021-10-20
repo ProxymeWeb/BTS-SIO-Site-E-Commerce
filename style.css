@@ -89,7 +89,7 @@ h1{font-family: "Vogue";
 
 /*
 =====
-LES BOITES
+ACCUEIL
 =====
 */
 .banner{   width:100%;
@@ -129,14 +129,20 @@ LES BOITES
 
            }
 
+
+
 .item{ height: 250px ;
        width:33%;
        margin-left:0px;
        margin-right:0px;
        margin-bottom:8px;
+       transition-duration: 0.5s;
 
 
      }
+
+
+
 /*
 =====
 CONTACT
@@ -146,6 +152,7 @@ CONTACT
               margin-right:15%;
               margin-left:15%;
               margin-top: 150px;
+
 
               }
 .imgcontact{ position: absolute;
@@ -195,6 +202,50 @@ legend{ background-color: rgb(10,65,62);
 
 .sexe{display: flex;
       }
+
+/*
+=====
+FORMULAIRE CONTACT
+=====
+*/
+
+.contactform{ position:absolute ;
+              display: flex ;
+              flex-direction: column ;
+              border: solid grey 1px;
+              border-radius: 5% ;
+              padding: 20px ;
+              right: 8% ;
+              width: 400px;
+              top:20%;
+              }
+
+.contactform input[type=submit] {
+  background-color: rgb(10,65,62);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactform input[type=text], textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  margin-right: 0px;
+  margin-left: 0px;
+  resize: vertical;
+}
+
+.contactform label{margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;}
+
 
 /*
 =====
@@ -253,7 +304,7 @@ MENU
 
 /*
 =====
-PRESENTATION STYLES
+PRESENTATION STYLES MENU
 =====
 */
 
@@ -268,6 +319,9 @@ PRESENTATION STYLES
   font-weight: 700;
   text-transform: uppercase;
 }
+
+
+
 
 /*
 =====
