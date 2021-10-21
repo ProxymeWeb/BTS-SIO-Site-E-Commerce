@@ -35,12 +35,14 @@ header{background-color: rgb(255,255,255);  /* background color du menu */
 
   }
 
-  .logo{height:auto;
+ .logo{	height:auto;
         width: 200px ;
         display: block;
         margin-left: auto;
-        margin-right: auto }
+        margin-right: auto ;
+		transition: transform .2s;}
 
+.logo:hover{transform: scale(1.03);}
 
 #login{position: absolute;
        top: 5px;
@@ -76,6 +78,8 @@ header{background-color: rgb(255,255,255);  /* background color du menu */
      margin-right:20%;
      margin-left: 20%;
      margin-bottom:auto;
+	
+
 
        }
 
@@ -85,10 +89,17 @@ p{ padding-bottom:40px;
 
 }
 
-h1{font-family: "Vogue";
+h1,h2{font-family: "Vogue";
    text-align: center;
    font-size: 50px}
 
+.pleft{text-align: left ;
+	   margin-left: 5%;
+	   margin-right: 5%;
+	   font-family: helvetica;
+
+    
+	   }
 /*
 =====
 ACCUEIL
@@ -231,7 +242,7 @@ FORMULAIRE CONTACT
   cursor: pointer;
 }
 
-.contactform input[type=text], textarea, input[type=email] {
+.contactform input[type=text], textarea,select, input[type=email] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -327,16 +338,15 @@ QUI SOMME NOUS
 =====
 */
 #quisommesnous {
-    margin-right: 10%;
-    margin-left: 10%;
+   
     margin-top: 0px;
     margin-bottom: 50px;
-    background-color: #eeeeee;
     text-align: left;
 }
 #qsn {
-    margin-left: 10%;
-    width:80%;
+    height:400px;
+    width:100%;
+	
 }
 
 /*
