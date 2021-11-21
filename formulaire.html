@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>TravelScope</title>
+  <link rel="stylesheet" href="style.css">
+  <script  src="scripts.js"></script>
+</head>
+
+<body>
+        <header>
+
+            <a href="index.html">  <img class="logo"  src="images/logo.png"></a>
+        <nav class="menu">
+          <ul class="menu__list r-list">
+            <li ><a href="#" class="menu__link r-link text-underlined">Nos Voyages</a></li>
+            <li ><a href="#" class="menu__link r-link text-underlined">Produits Dérivés</a></li>
+            <li ><a href="whoami.html" class="menu__link r-link text-underlined">Qui sommes-Nous ?</a></li>
+            <li ><a href="contact.html" class="menu__link r-link text-underlined">Contact</a></li>
+          </ul>
+        </nav>
+
+        </header>
+        <a href="#"><p id="login"> S'inscrire </p></a>
+
+
+       <section class="bande">
+         <form>
+<fieldset>
+  <legend> Formulaire d'insciption </legend>
+  <br>
+    <fieldset>
+      <legend> Compte </legend>
+      <label for="pseudo">Pseudo :</label>
+      <input type="text" name="pseudo" id="pseudo" />
+    <br>
+      <label for="pass">Mot de passe :</label>
+      <input type="password" name="pass" id="pass" />
+    <br>
+      <label for="mail">Adresse e-mail :</label>
+      <input type="text" name="mail" id="mail" />
+    <br>
+  </fieldset>
+  <fieldset>
+      <legend> Informations personnelles </legend>
+            <label for="nom">Nom :</label>
+            <input type="text" name="nom" id="nom" />
+        <br>
+            <label for="prenom">Prenom :</label>
+            <input type="text" name="prenom" id="prenom" />
+        <br>
+
+        <label for="pseudo">Numéro de téléphone :</label>
+        <input type="tel" name="tel" id="tel" />
+      <br>
+          Sexe :<br>
+          <div class="sexe">
+          <input type="radio" name="sexe" id="homme" /> <label for="homme">Homme</label><br>
+          <input type="radio" name="sexe" id="femme" /> <label for="femme">Femme</label><br>
+          <input type="radio" name="sexe" id="autre" /> <label for="autre">Autre</label><br>
+          </div>
+
+          <label for="date">Date de naissance :</label>
+          <input type="date" />
+        <br>
+
+
+
+
+          <label for="adresse">Adresse :</label>
+          <input type="text" name="adresse" id="adresse" />
+        <br>
+          <label for="ville">Ville :</label>
+          <input type="text" name="ville" id="ville" />
+        <br>
+          <label for="cp">Code postal :</label>
+          <input type="text" name="cp" id="cp" />
+        <br>
+        <input type="submit" value="Envoyer" onClick ="verif(this.form)">
+</fieldset>
+
+      </form>
+
+
+       </section>
+
+
+
+
+
+
+
+        <footer>
+          <div class="top_line"></div>
+
+        <div >
+
+                  <ul >
+                      <p></p>
+                  </ul>
+        </div>
+        </footer>
+</body>
+</html>
