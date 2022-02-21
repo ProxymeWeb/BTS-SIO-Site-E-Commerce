@@ -46,30 +46,62 @@ header{background-color: rgb(255,255,255);  /* background color du menu */
 
 .logo:hover{transform: scale(1.03);}
 
-#login{position: absolute;
-       top: 5px;
-       right: 15px;
-       z-index:9999;
-       padding: 7px 20px;
-       color: #85919d;
-       border: 2px solid rgba(10,65,62, 0.5);
-       -webkit-border-radius: 7px;
-       -moz-border-radius: 7px;
-       -ms-border-radius: 7px;
-       border-radius: 7px;
-       transition-duration: 0.5s}
+#logbtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    z-index: 9999;
+    padding: 7px 20px;
+    color: white;
+    background-color: rgb(10,65,62);
+    border: 2px solid rgba(10,65,62, 0.5);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    transition-duration: 0.5s
+}
 
-#login:hover{position: absolute;
+#logbtn:hover{position: absolute;
              top: 5px;
              right: 15px;
              z-index:9999;
              padding: 7px 20px;
-             color:rgba(10, 65, 62, 1);
+             color:rgba(228, 228,216, 1);
              border: 2px solid rgba(10, 65, 62, 1);
              -webkit-border-radius: 7px;
              -moz-border-radius: 7px;
-            -ms-border-radius: 7px;
-            border-radius: 7px;}
+             -ms-border-radius: 7px;
+              border-radius: 7px;}
+
+#logbtn2 {
+    position: absolute;
+    top: 5px;
+    right: 140px;
+    z-index: 9999;
+    padding: 7px 20px;
+    color: #85919d;
+    border: 2px solid rgba(10,65,62, 0.5);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    transition-duration: 0.5s
+}
+
+    #logbtn2:hover {
+        position: absolute;
+        top: 5px;
+        right: 140px;
+        z-index: 9999;
+        padding: 7px 20px;
+        color: rgba(10, 65, 62, 1);
+        border: 2px solid rgba(10, 65, 62, 1);
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        border-radius: 7px;
+    }
 
 
 .inscription {
@@ -91,7 +123,9 @@ p{ padding-bottom:40px;
 
 h1,h3{font-family: "Vogue";
    text-align: center;
-   font-size: 50px}
+   font-size: 50px ;
+   padding-top:0px;
+}
 
 .pleft{text-align: left ;
 	   margin-left: 5%;
@@ -126,6 +160,13 @@ ACCUEIL
                padding-bottom:0px;
                margin-bottom:0px;
           }
+
+ .bande{margin-left:20%;
+        margin-right:20%;
+        background-color: white;
+        padding-top:1px;
+        margin-top:0px;
+ }
 /*
 =====
 LES BOITES
@@ -150,8 +191,6 @@ LES BOITES
        margin-right:0px;
        margin-bottom:8px;
        transition-duration: 0.5s;
-
-
      }
 
 
@@ -192,12 +231,13 @@ CONTACT
 FORMULAIRE
 =====
 */
-fieldset{margin-right: 15%;
-         margin-left: 15%;
-         margin-top: 50px;
-         margin-bottom: 50px;
-         background-color: #eeeeee;
-
+fieldset {
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #eeeeee;
+    border-radius: 5px;
 }
 fieldset label{
                padding-bottom:10px
@@ -267,14 +307,13 @@ FOOTER
 */
 
 footer {
-  height: 60px;
-  width: 100%;
-  background: rgb(10,65,62);
-  position:relative;
-  bottom: 0px;
-  color: rgb(255,255,255);
-  text-align: center ;
-
+    height: 60px;
+    width: 100%;
+    background: rgb(10,65,62);
+    position: relative;
+    top: 0vh;
+    color: rgb(255,255,255);
+    text-align: center;
 }
 footer .top_line {
   height: 5px;
@@ -390,4 +429,28 @@ TEXT UNDERLINED
   .text-underlined:hover::after{
     width: 100%;
     transition-duration: .2s;
+
   }
+/*
+=====
+CONNEXION
+=====
+*/
+.connexion {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+/*
+=====================
+   /!\ ANIMATION /!\
+=====================
+*/
+
+.item{
+    overflow: hidden;
+}
+.item:hover {
+    transform: scale(1.05);
+    overflow: hidden;
+}
