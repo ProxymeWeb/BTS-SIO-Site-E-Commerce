@@ -134,6 +134,14 @@ h1,h3{font-family: "Vogue";
 
     
 	   }
+
+.lock {
+    width: 20px;
+    transform: rotate(-30deg);
+}
+
+
+
 /*
 =====
 ACCUEIL
@@ -147,6 +155,7 @@ ACCUEIL
            margin-right:0px;
            padding-left:0px;
            padding-right:0px;
+           overflow:hidden;
            }
 
  #cover{       background: url(images/bckground1.jpg) no-repeat center center  ;
@@ -166,7 +175,15 @@ ACCUEIL
         background-color: white;
         padding-top:1px;
         margin-top:0px;
+  
  }
+
+.nohover {
+    overflow: hidden;
+    width: 33%;
+    height: 250px;
+    margin-bottom: 8px;
+}
 /*
 =====
 LES BOITES
@@ -185,13 +202,14 @@ LES BOITES
 
 
 
-.item{ height: 250px ;
-       width:33%;
-       margin-left:0px;
-       margin-right:0px;
-       margin-bottom:8px;
-       transition-duration: 0.5s;
-     }
+.item {
+
+    margin-left: 0px;
+    margin-right: 0px;
+    
+
+    
+}
 
 
 
@@ -388,6 +406,15 @@ QUI SOMME NOUS
 	
 }
 
+.bande2 {
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    padding-top: 1px;
+    padding-bottom:50px;
+}
+
+
 /*
 =====
 TEXT UNDERLINED
@@ -441,16 +468,65 @@ CONNEXION
     margin-left: 20%;
 }
 
+
+
+
+/*
+=====
+CATALOGUE
+=====
+*/
+
+
+.contenue {
+    background-color: #ECF8F6;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    margin-top:0px;
+}
+
+.contenue h1 {
+        padding-top: 10px;
+        margin-top: 10px;
+}
+
+.filtre{
+    border-right :black solid 1px;
+    width:20%;
+    
+    }
+
+.grosseboite {
+   /* border: black solid 1px; */
+    margin-right: 50px;
+    width:100%;
+}
+
+
+.column{
+    display:flex;
+    flex-direction:column;
+}
+
+h3 {
+    font-size: 20px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding-top: 5px;
+}
 /*
 =====================
    /!\ ANIMATION /!\
 =====================
 */
-
-.item{
-    overflow: hidden;
+.item {
+    width: 100%;
+    height: 100%;
+    transition-duration:0.7s;
+    
 }
 .item:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
     overflow: hidden;
 }
