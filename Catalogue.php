@@ -46,15 +46,264 @@
             </section>
 
             <section class="grosseboite">
-
+			<!-- 
+			-->
                   <table>
 				  <tr>
 				  <?php 
-				  $requete = SELECT "nom_voyage" FROM "catalogue"
-				  ?>
-				  </tr>
-				  <tr>
-				  coucou
+					$connexion= odbc_connect("ODBC_travelscope","root","");
+					$voyage = 'SELECT * FROM catalogue';  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					$req = odbc_exec($connexion,$voyage) ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    $data = odbc_fetch_array($req);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    $nb_voy= odbc_num_rows($req);
+
+                                                                                                                                                                                                                                                                                                                                                if ($nb_voy == 0) {
+	                    echo 'Aucun voyage enregistré.';
+                    }
+                    else {
+	                                                                                                                                                                                                                                                                                                                                                                                       echo '<h1>Nos Voyages</h1>';
+	                        
+	                   while ($data = odbc_fetch_array($req)) {
+		               
+		                                                                                                                                                            echo '<div class="boite"><h2>' , htmlentities(trim($data['nom_voyage'])) , '</h2>';
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           echo '<p>' , htmlentities(trim($data['prix_voyage'])) , '€</p>';
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     echo '<p>' , htmlentities(trim($data['description_voyage'])) , '</p>';                               
+                        echo '<p><img src="'.$data['image'].'" alt="Image" style="width:128px;height:128px"></p></div>';
+                     
+                       	}
+	              
+                        }
+                      
+
+				                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ?>
 				  </tr>
 				  </table>
         
