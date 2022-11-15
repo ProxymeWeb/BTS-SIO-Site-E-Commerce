@@ -16,9 +16,13 @@ body{background-color:rgb(228,228,216);
      margin: 0px 0px 0px 0px;
      color: rgb(10,65,62) ;
      font-family:Helvetica Neue, Helvetica, sans-serif;
+    
 
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
 
 header{background-color: rgb(255,255,255);  /* background color du menu */
       color: rgb(10,65,62) ;
@@ -89,19 +93,19 @@ header{background-color: rgb(255,255,255);  /* background color du menu */
     transition-duration: 0.5s
 }
 
-    #logbtn2:hover {
-        position: absolute;
-        top: 5px;
-        right: 140px;
-        z-index: 9999;
-        padding: 7px 20px;
-        color: rgba(10, 65, 62, 1);
-        border: 2px solid rgba(10, 65, 62, 1);
-        -webkit-border-radius: 7px;
-        -moz-border-radius: 7px;
-        -ms-border-radius: 7px;
-        border-radius: 7px;
-    }
+#logbtn2:hover {
+    position: absolute;
+    top: 5px;
+    right: 140px;
+    z-index: 9999;
+    padding: 7px 20px;
+    color: rgba(10, 65, 62, 1);
+    border: 2px solid rgba(10, 65, 62, 1);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+}
 
 
 .inscription {
@@ -479,11 +483,10 @@ CATALOGUE
 
 
 .contenue {
-    background-color: #ECF8F6;
-    height: 85vh;
+    background-color: #EFEFEF ;
     display: flex;
     flex-direction: row;
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .contenue h1 {
@@ -491,18 +494,77 @@ CATALOGUE
         margin-top: 10px;
 }
 
-.filtre{
+.filtre {
     border-right :black solid 1px;
     width:20%;
     
     }
 
 .grosseboite {
-   /* border: black solid 1px; */
     margin-right: 50px;
     width:100%;
 }
 
+.boite {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px 30px 30px 10px;
+    overflow: hidden;
+}
+
+.petiteboite {
+    width: 100%;
+    max-height: 200px;
+    display: grid;
+    grid-template-columns: 65% 15% 20%;
+    grid-template-rows: 25% 37% 37%;
+}
+
+.petiteboite h2 {
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 15px;
+}
+
+.petiteboite .desc{
+    margin-left: 10px;
+    margin-right: 15px;
+    text-align: justify;
+    padding-bottom: 0px;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+    .petiteboite select {
+        margin: auto;
+        height: 50px;
+        width: 100px;
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+
+.petiteboite span {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
 
 .column{
     display:flex;
@@ -514,6 +576,35 @@ h3 {
     border-top: 2px solid;
     border-bottom: 2px solid;
     padding-top: 5px;
+}
+
+#logbtn3 {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    z-index: 9999;
+    padding: 7px 20px;
+    color: #85919d;
+    border: 2px solid rgba(10,65,62, 0.5);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+    transition-duration: 0.5s
+}
+
+#logbtn3:hover {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    z-index: 9999;
+    padding: 7px 20px;
+    color: rgba(10, 65, 62, 1);
+    border: 2px solid rgba(10, 65, 62, 1);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
 }
 /*
 =====================
@@ -530,3 +621,75 @@ h3 {
     transform: scale(1.10);
     overflow: hidden;
 }
+
+/*
+=====================
+   /!\ BOUTON ACHETER /!\
+=====================
+*/
+
+
+.psuedo-text {
+    color: #0a413e;
+    position: relative;
+    top: 0;
+    display: inline;
+    height: auto;
+    transition: .25s ease-in;
+    transition-delay: .1s;
+}
+
+.flex-1 {
+    flex: 1;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    align-items:center;
+    margin-right:auto;
+    margin-left:auto;
+    
+}
+
+.button {
+    padding: 8px 36px;
+    min-width: ;
+    background: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    will-change: transform;
+}
+
+.button-mat {
+    color: #0a413e;
+    border: 0px transparent;
+    border-radius: .3rem;
+    transition: .3s ease-in-out;
+    transition-delay: .35s;
+    overflow: hidden;
+}
+    .button-mat:before {
+        content: '';
+        display: block;
+        background: #0a413e;
+        position: absolute;
+        width: 200%;
+        height: 500%;
+        border-radius: 100%;
+        transition: 0.36s cubic-bezier(0.4, 0, 1, 1);
+    }
+  .button-mat:hover .psuedo-text {
+    color: white; }
+  .button-mat:hover {
+    color: transparent; }
+
+.btn--5 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .btn--5:before {
+    transform: translate(-120%, -50%) translateZ(0); }
+  .btn--5:hover:before {
+    transform: translate(-45%, -34%) translateZ(0); }
