@@ -37,47 +37,47 @@
                 <br>
                 <fieldset>
                     <legend> Compte </legend>
-                    <label for="mail">Adresse e-mail :</label>
-                    <input type="text" name="mail" id="mail" />
+                    <label for="mail" >Adresse e-mail :</label>
+                    <input type="text" name="mail" id="mail" required/>
                     <br>
                     <label for="pass">Mot de passe :</label>
-                    <input type="password" name="pass" id="pass" />
+                    <input type="password" name="pass" id="pass" required/>
                     <br>
                 </fieldset>
                 <fieldset>
                     <legend> Informations personnelles </legend>
                     <label for="nom">Nom :</label>
-                    <input type="text" name="nom" id="nom" />
+                    <input type="text" name="nom" id="nom" required/>
                     <br>
                     <label for="prenom">Prenom :</label>
-                    <input type="text" name="prenom" id="prenom" />
+                    <input type="text" name="prenom" id="prenom" required/>
                     <br>
 
                     <label for="pseudo">Numéro de téléphone :</label>
-                    <input type="tel" name="tel" id="tel" />
+                    <input type="tel" name="tel" id="tel" required/>
                     <br>
                     Sexe :<br>
                     <div class="sexe">
-                        <input type="radio" name="sexe" id="homme" value="Homme" /> <label for="homme">Homme</label><br>
-                        <input type="radio" name="sexe" id="femme" value="Femme" /> <label for="femme">Femme</label><br>
-                        <input type="radio" name="sexe" id="autre" value="Autre" /> <label for="autre">Autre</label><br>
+                        <input type="radio" name="sexe" id="homme" value="Homme" required /> <label for="homme">Homme</label><br>
+                        <input type="radio" name="sexe" id="femme" value="Femme" required/> <label for="femme">Femme</label><br>
+                        <input type="radio" name="sexe" id="autre" value="Autre" required/> <label for="autre">Autre</label><br>
                     </div>
 
                     <label for="date">Date de naissance :</label>
-                    <input type="date" name="naissance" />
+                    <input type="date" name="naissance" required/>
                     <br>
 
 
 
 
                     <label for="adresse">Adresse :</label>
-                    <input type="text" name="adresse" id="adresse" />
+                    <input type="text" name="adresse" id="adresse" required/>
                     <br>
                     <label for="ville">Ville :</label>
-                    <input type="text" name="ville" id="ville" />
+                    <input type="text" name="ville" id="ville" required/>
                     <br>
                     <label for="cp">Code postal :</label>
-                    <input type="text" name="cp" id="cp" />
+                    <input type="text" name="cp" id="cp" required/>
                     <br>
                     <input type="submit" value="Envoyer">
                 </fieldset>

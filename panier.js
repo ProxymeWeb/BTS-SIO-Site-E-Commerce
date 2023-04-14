@@ -14,10 +14,10 @@ function getpanier() {
     }
 }
 
-function ajoutpanier(nom, qte,leid,prix) {
+function ajoutpanier(nom, qte, leid, prix, img) {
 
     let panier = getpanier();
-    produit = creerproduit(nom, qte, leid,prix);
+    produit = creerproduit(nom, qte, leid, prix, img);
     let trouverproduit = panier.find(p => p.id == produit.id);
     if (trouverproduit != undefined) {
         trouverproduit.qte = parseInt(produit.qte);
@@ -32,13 +32,13 @@ function ajoutpanier(nom, qte,leid,prix) {
 }
 
 
-function creerproduit(nom, qte,leid,prix) {
+function creerproduit(nom, qte, leid, prix, img) {
 
 
     const liste = document.getElementById(qte);
     const optionSelectionnee = liste.querySelector("option:checked");
     const quantite = optionSelectionnee.value;
-    var produit = { "id": leid, "name":  nom  ,"qte": quantite,"prix": prix };
+    var produit = { "id": leid, "name":  nom  ,"qte": quantite,"prix": prix , "image": img};
     console.log(produit);
     return produit
 

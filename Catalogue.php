@@ -1,8 +1,9 @@
 
 <?php
- 
-header('content-Type : text/html;charset=iso-8859-1');
 session_start();
+header('content-Type : text/html;charset=iso-8859-1');
+header('X-Email: '.$_SESSION["id_client"]);
+
  $_SESSION['qte']="" ; 
  if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){ 
   
@@ -16,7 +17,7 @@ session_start();
  </head>
  <body id="cataloguepage">
     <header>
-
+        <a href="https://localhost:44324/WebForm1.aspx"> <img src="images/icon-user.png" style="position:absolute;widht:50px;height:50px;left:15px;top:15px;"></a>
         <a href="#">  <img class="logo" src="images/logo.png"></a>
         <nav class="menu">
             <ul class="menu__list r-list">
@@ -87,7 +88,7 @@ session_start();
                         echo '<span name="lblprix" class="price" >'.htmlentities(trim($data['prix_voyage'])).'&#8364;</span>';
                         echo '<p class="desc">'.htmlentities(trim($data['description_voyage'])).'</p>';
                         echo '<div class="flex-1" "> 
-                        <button class="button button-mat btn--5" onclick=\'ajoutpanier(this.value,"'.$data['nom_voyage'].'","'.$data['id_voyage'].'","'.$data['prix_voyage'].'")\' id="in" value="'.$data['nom_voyage'].'"  ><div class="psuedo-text">
+                        <button class="button button-mat btn--5" onclick=\'ajoutpanier(this.value,"'.$data['nom_voyage'].'","'.$data['id_voyage'].'","'.$data['prix_voyage'].'","'.$data['image'].'")\' id="in" value="'.$data['nom_voyage'].'"  ><div class="psuedo-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
                         <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717L5.07 1.243zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0v-3z"/>
                         </svg>
@@ -142,6 +143,7 @@ session_start();
  </body> 
 
  ';
+
  } else {
       header('Location:connexion.html');
 }

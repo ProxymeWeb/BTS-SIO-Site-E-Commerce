@@ -653,7 +653,6 @@ h3 {
 
 .button {
     padding: 8px 36px;
-    min-width: ;
     background: white;
     text-align: center;
     display: inline-block;
@@ -693,3 +692,65 @@ h3 {
     transform: translate(-120%, -50%) translateZ(0); }
   .btn--5:hover:before {
     transform: translate(-45%, -34%) translateZ(0); }
+
+/*
+=====================
+   /!\ Panier /!\
+=====================
+*/
+
+.panier {
+    margin:20px 5vw;
+    background-color: #EFEFEF;
+    display:flex;
+    justify-content:space-around;
+    padding: 5px;
+}
+
+.tab {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 70vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+.boite2 {
+  
+    border-top: grey 1px solid;
+    display: flex;
+}
+
+.retour{
+position:absolute;
+top:0px;
+left:0px;
+color:red
+}
+
+.imgpanier{
+   width:250px;
+   padding: 10px 0px;        
+}
+
+.total {
+    background-color: white;
+    height: 100px;
+    padding: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.desc {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    padding:0px 10px;
+    text-align:justify;
+}
+
+.desc p{
+
+    text-align:left;
+}
